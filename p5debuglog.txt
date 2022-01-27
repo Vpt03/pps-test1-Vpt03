@@ -1,0 +1,554 @@
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+4
+enter the third number:
+7
+the biggest of 6 ,4 and 7 is 7  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x879: file p5original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vpt03-1/a.out 
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+4
+enter the third number:
+7
+the biggest of 6 ,4 and 7 is 7  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x879: file p5original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vpt03-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:31
+31  {
+(gdb) s
+33    input(&a1,&a2,&a3);
+(gdb) s
+input (a=0x7ffd2da9c0a8, b=0x7ffd2da9c0ac, 
+    c=0x7ffd2da9c0b0) at p5original.c:4
+4     printf("enter the first number:\n");
+(gdb) n
+enter the first number:
+5     scanf("%d",a);
+(gdb) n
+n
+6     printf("enter the second number:\n");
+(gdb) n
+enter the second number:
+7     scanf("%d",b);
+(gdb) n
+8     printf("enter the third number:\n");
+(gdb) n
+enter the third number:
+9     scanf("%d",c);
+(gdb) n
+10  }
+(gdb) n
+main () at p5original.c:34
+34    cmp(a1,a2,a3,& large);
+(gdb) s
+cmp (a=-1910503840, b=21990, c=766099872, 
+    large=0x7ffd2da9c0b4) at p5original.c:13
+13    if(a>b && a>c)
+(gdb) n
+17    else if (b>c)
+(gdb) n
+23      *large=c;
+(gdb) n
+25  }
+(gdb) n
+main () at p5original.c:35
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+4
+enter the third number:
+7
+the biggest of 6 ,4 and 7 is 7  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x879: file p5original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vpt03-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:31
+31  {
+(gdb) s
+33    input(&a1,&a2,&a3);
+(gdb) s
+input (a=0x7ffd2da9c0a8, b=0x7ffd2da9c0ac, 
+    c=0x7ffd2da9c0b0) at p5original.c:4
+4     printf("enter the first number:\n");
+(gdb) n
+enter the first number:
+5     scanf("%d",a);
+(gdb) n
+n
+6     printf("enter the second number:\n");
+(gdb) n
+enter the second number:
+7     scanf("%d",b);
+(gdb) n
+8     printf("enter the third number:\n");
+(gdb) n
+enter the third number:
+9     scanf("%d",c);
+(gdb) n
+10  }
+(gdb) n
+main () at p5original.c:34
+34    cmp(a1,a2,a3,& large);
+(gdb) s
+cmp (a=-1910503840, b=21990, c=766099872, 
+    large=0x7ffd2da9c0b4) at p5original.c:13
+13    if(a>b && a>c)
+(gdb) n
+17    else if (b>c)
+(gdb) n
+23      *large=c;
+(gdb) n
+25  }
+(gdb) n
+main () at p5original.c:35
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+4
+enter the third number:
+7
+the biggest of 6 ,4 and 7 is 7  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x879: file p5original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vpt03-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:31
+31  {
+(gdb) s
+33    input(&a1,&a2,&a3);
+(gdb) s
+input (a=0x7ffd2da9c0a8, b=0x7ffd2da9c0ac, 
+    c=0x7ffd2da9c0b0) at p5original.c:4
+4     printf("enter the first number:\n");
+(gdb) n
+enter the first number:
+5     scanf("%d",a);
+(gdb) n
+n
+6     printf("enter the second number:\n");
+(gdb) n
+enter the second number:
+7     scanf("%d",b);
+(gdb) n
+8     printf("enter the third number:\n");
+(gdb) n
+enter the third number:
+9     scanf("%d",c);
+(gdb) n
+10  }
+(gdb) n
+main () at p5original.c:34
+34    cmp(a1,a2,a3,& large);
+(gdb) s
+cmp (a=-1910503840, b=21990, c=766099872, 
+    large=0x7ffd2da9c0b4) at p5original.c:13
+13    if(a>b && a>c)
+(gdb) n
+17    else if (b>c)
+(gdb) n
+23      *large=c;
+(gdb) n
+25  }
+(gdb) n
+main () at p5original.c:35
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+8
+enter the third number:
+7
+the biggest of 6 ,8 and 7 is 8  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+4
+enter the third number:
+7
+the biggest of 6 ,4 and 7 is 7  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x879: file p5original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vpt03-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:31
+31  {
+(gdb) s
+33    input(&a1,&a2,&a3);
+(gdb) s
+input (a=0x7ffd2da9c0a8, b=0x7ffd2da9c0ac, 
+    c=0x7ffd2da9c0b0) at p5original.c:4
+4     printf("enter the first number:\n");
+(gdb) n
+enter the first number:
+5     scanf("%d",a);
+(gdb) n
+n
+6     printf("enter the second number:\n");
+(gdb) n
+enter the second number:
+7     scanf("%d",b);
+(gdb) n
+8     printf("enter the third number:\n");
+(gdb) n
+enter the third number:
+9     scanf("%d",c);
+(gdb) n
+10  }
+(gdb) n
+main () at p5original.c:34
+34    cmp(a1,a2,a3,& large);
+(gdb) s
+cmp (a=-1910503840, b=21990, c=766099872, 
+    large=0x7ffd2da9c0b4) at p5original.c:13
+13    if(a>b && a>c)
+(gdb) n
+17    else if (b>c)
+(gdb) n
+23      *large=c;
+(gdb) n
+25  }
+(gdb) n
+main () at p5original.c:35
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+8
+enter the third number:
+7
+the biggest of 6 ,8 and 7 is 8  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x879: file p5original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vpt03-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:31
+31  {
+(gdb) s
+33    input(&a1,&a2,&a3);
+(gdb) s
+input (a=0x7ffd3933a228, b=0x7ffd3933a22c, 
+    c=0x7ffd3933a230) at p5original.c:4
+4     printf("enter the first number:\n");
+(gdb) n
+enter the first number:
+5     scanf("%d",a);
+(gdb) n
+n
+6     printf("enter the second number:\n");
+(gdb) n
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+4
+enter the third number:
+7
+the biggest of 6 ,4 and 7 is 7  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x879: file p5original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vpt03-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:31
+31  {
+(gdb) s
+33    input(&a1,&a2,&a3);
+(gdb) s
+input (a=0x7ffd2da9c0a8, b=0x7ffd2da9c0ac, 
+    c=0x7ffd2da9c0b0) at p5original.c:4
+4     printf("enter the first number:\n");
+(gdb) n
+enter the first number:
+5     scanf("%d",a);
+(gdb) n
+n
+6     printf("enter the second number:\n");
+(gdb) n
+enter the second number:
+7     scanf("%d",b);
+(gdb) n
+8     printf("enter the third number:\n");
+(gdb) n
+enter the third number:
+9     scanf("%d",c);
+(gdb) n
+10  }
+(gdb) n
+main () at p5original.c:34
+34    cmp(a1,a2,a3,& large);
+(gdb) s
+cmp (a=-1910503840, b=21990, c=766099872, 
+    large=0x7ffd2da9c0b4) at p5original.c:13
+13    if(a>b && a>c)
+(gdb) n
+17    else if (b>c)
+(gdb) n
+23      *large=c;
+(gdb) n
+25  }
+(gdb) n
+main () at p5original.c:35
+ 
+ gcc -g p5original.c
+ ./a.out
+enter the first number:
+6
+enter the second number:
+8
+enter the third number:
+7
+the biggest of 6 ,8 and 7 is 8  
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x879: file p5original.c, line 31.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vpt03-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:31
+31  {
+(gdb) s
+33    input(&a1,&a2,&a3);
+(gdb) s
+input (a=0x7ffd3933a228, b=0x7ffd3933a22c, 
+    c=0x7ffd3933a230) at p5original.c:4
+4     printf("enter the first number:\n");
+(gdb) n
+enter the first number:
+5     scanf("%d",a);
+(gdb) n
+n
+6     printf("enter the second number:\n");
+(gdb) n
+enter the second number:
+7     scanf("%d",b);
+(gdb) n
+8     printf("enter the third number:\n");
+(gdb) n
+enter the third number:
+9     scanf("%d",c);
+(gdb) n
+10  }
+(gdb) n
+main () at p5original.c:34
+34    cmp(a1,a2,a3,& large);
+(gdb) s
+cmp (a=274728544, b=22085, c=959685408, 
+    large=0x7ffd3933a234) at p5original.c:13
+13    if(a>b && a>c)
+(gdb) n
+17    else if (b>c)
+(gdb) n
+23      *large=c;
+(gdb) n
+25  }
+(gdb) n
+main () at p5original.c:35
+35    output(a1,a2,a3,large);
+(gdb) s
+output (a=274728544, b=22085, c=959685408, 
+    large=959685408) at p5original.c:28
+28      printf("the biggest of %d ,%d and %d is %d  \n",a,b,c,large);
+(gdb) n
+the biggest of 274728544 ,22085 and 959685408 is 959685408  
+29  }
+(gdb) n
+main () at p5original.c:36
+36    return 0;
+(gdb) n
+37  }
+(gdb) n
+__libc_start_main (main=0x564510600871 <main>, 
+    argc=1, argv=0x7ffd3933a328, 
+    init=<optimized out>, fini=<optimized out>, 
+    rtld_fini=<optimized out>, 
+    stack_end=0x7ffd3933a318)
+    at ../csu/libc-start.c:344
+344 ../csu/libc-start.c: No such file or directory.
+(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 102] will be killed.
+
+Quit anyway? (y or n) y
+ 
